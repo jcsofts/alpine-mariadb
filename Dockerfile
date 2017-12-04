@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.6
 
 ENV LC_ALL=en_GB.UTF-8
 
