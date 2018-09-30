@@ -96,11 +96,13 @@ EOSQL
   fi
 
   # make sure mysql completely ended
-  sleep 2
+  sleep 4
 
   echo
   echo 'MySQL init process done. Ready for start up.'
   echo
 fi
+
+rm -f $PID_FILE
 
 exec mysqld_safe --pid-file=$PID_FILE
