@@ -103,4 +103,6 @@ EOSQL
   echo
 fi
 
+rm -f $PID_FILE
+
 exec mysqld_safe --pid-file=$PID_FILE
